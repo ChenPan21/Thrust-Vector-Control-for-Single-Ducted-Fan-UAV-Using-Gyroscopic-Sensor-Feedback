@@ -80,7 +80,6 @@
 
 电子系统的核心是定制化的 PCB，它集成了主控、电源管理、传感器接口和驱动等于一体。
 本项目主控板原理图如下所示：
-
 <br>
 <p align="center">
   <img src="img/Schematic.png" alt="硬件系统架构图" width="700"/>
@@ -114,7 +113,7 @@
     * 大面积铺铜与过孔设计，以支持大电流传输。
     * 功率地和信号地采用0欧姆电阻连接。
     * 集成了自动下载电路、电源反接保护和状态指示灯等辅助功能。
-
+* **PCB实物图:**
 <br>
 <p align="center">
   <img src="img/pcb_photo_EN.png" alt="PCB实物正反面图" width="700"/>
@@ -128,7 +127,6 @@
 软件系统基于 FreeRTOS 实时操作系统构建，通过多任务并行处理，确保了控制系统的实时性和可靠性。
 
 ### 1. 软件架构
-
 <br>
 <p align="center">
   <img src="img/software_architecture_rtos_EN.png" alt="软件系统架构图" width="500"/>
@@ -150,7 +148,6 @@
 
 * **滚转/俯仰:** 采用角度环控制，直接追踪遥控器设定的目标角度。
 * **偏航:** 采用角速率环控制，追踪目标角速度，响应更平滑。
-
 <br>
 <p align="center">
   <img src="img/pid_workflow.png" alt="PID闭环控制流程图" width="700"/>
@@ -187,7 +184,6 @@ if (!isArmed || lowVoltage) {
 我们搭建了专用的推力测试平台，以表征函道风扇的性能。
 
 * **结果:** 测得最大推力约为 **700克**，且推力与油门近似呈线性关系。
-
 <br>
 <p align="center">
   <img src="img/thrust_test_setup.jpg" alt="地面推力测试平台" width="600"/>
@@ -202,7 +198,6 @@ if (!isArmed || lowVoltage) {
 通过四根柔性绳索将无人机悬挂，在限制位移的同时，验证矢量控制系统的姿态调节能力。
 
 * **结果:** 无人机能够稳定地响应遥控指令，在多个方向上实现姿态控制，并具备一定的抗干扰能力。测试验证了矢量控制逻辑的可行性。
-
 <br>
 <p align="center">
   <img src="img/tethered_flight_test.png" alt="系留飞行测试效果图" width="700"/>
