@@ -82,7 +82,14 @@
 ### 2. 电子系统
 
 电子系统的核心是定制化的 PCB，它集成了主控、电源管理、传感器接口和驱动等于一体。
+本项目主控板原理图如下所示：
 
+<br>
+<p align="center">
+  <img src="img/Schematic.png" alt="硬件系统架构图" width="700"/>
+</p>
+
+硬件系统架构：
 <br>
 <p align="center">
   <img src="img/hardware_architecture_CN.png" alt="硬件系统架构图" width="700"/>
