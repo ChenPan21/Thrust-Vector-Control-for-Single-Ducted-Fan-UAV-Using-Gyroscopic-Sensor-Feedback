@@ -2,7 +2,7 @@
 
 ![项目成品图](img/drone_final_assembly.png)
 
-这是一个关于使用陀螺仪传感器反馈，为单函道风扇无人机（UAV）实现推力矢量控制（Thrust Vector Control, TVC）的研发项目。
+这是一个关于使用陀螺仪传感器反馈，为单函道风扇无人机（UAV）实现推力矢量控制（Thrust Vector Control, TVC）的项目。
 
 ---
 
