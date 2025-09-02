@@ -1,4 +1,4 @@
-<img width="603" height="83" alt="image" src="https://github.com/user-attachments/assets/f09c5fa3-22cf-48e4-b767-dd307076efe9" /># 单函道风扇无人机的推力矢量控制
+# 单函道风扇无人机的推力矢量控制(TVC)
 
 ![项目成品图](img/drone_final_assembly.png)
 
