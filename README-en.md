@@ -5,9 +5,7 @@
 
 # Thrust Vector Control (TVC) for a Single Ducted Fan UAV
 
-<p align="center">
-  <img src="img/TVC_Drone.png" alt="Final Product" width="600"/>
-</p>
+![Project deliverables](img/TVC_Drone.png)
 
 This is a project about implementing Thrust Vector Control (TVC) for a single ducted fan Unmanned Aerial Vehicle (UAV) using gyroscopic sensor feedback.
 
@@ -18,21 +16,9 @@ This is a project about implementing Thrust Vector Control (TVC) for a single du
 ### What is Thrust Vector Control (TVC)?
 
 Let's start with a little game. Imagine you're trying to balance an inverted water bottle on the palm of your hand, keeping it upright.
-
-<br>
-<p align="center">
-  <img src="img/r62n2zD.png" alt="Inverted Water Bottle" width="400"/>
-</p>
-<br>
-
+![Inverted Water Bottle](img/r62n2zD.png) 
 When the bottle starts to tilt left, your hand instinctively moves left to create a reaction force, pushing the bottle back to the center. When it tilts right, your hand moves right to correct it, thus achieving balance.
-
-<br>
-<p align="center">
-  <img src="img/r62n2zD2.png" alt="TVC Principle in this Project" width="400"/>
-</p>
-<br>
-
+![TVC Principle in this Project](img/r62n2zD2.png)
 The **Thrust Vector Control** principle in this UAV project is very similar. The four servo vanes at the bottom are like your hand, and the UAV's body is like the bottle. When the UAV's gyroscope sensor (equivalent to our eyes and sense of balance) detects a tilt, the controller immediately commands the corresponding vanes to deflect, changing the direction of the high-speed airflow. This airflow then generates a reaction force that "pushes" the airframe back to a stable state.
 
 By precisely and rapidly controlling this reaction force, the UAV can achieve stable flight in all attitudes—hover, roll, pitch, and yaw—without needing multiple propellers.
@@ -75,21 +61,13 @@ The mechanical structure was developed over three main versions, all 3D printed 
     * **Problem:** The enclosed bottom structure blocked airflow in the diagonal directions, causing vector control to fail.
 
 * **V2: Airflow Optimization & Dual-Battery Scheme**
-    <br>
-    <p align="center">
-        <img src="img/mechanical_v2.png" alt="Version 2 Design" width="600"/>
-    </p>
-
+![Version 2 Design](img/mechanical_v2.png)
     * Large openings were added to the bottom diagonal areas, solving the airflow blockage and increasing servo travel range.
     * Adopted a symmetrical dual-battery layout to balance the center of gravity and designed a heat dissipation duct for the ESC.
     * **Problem:** The dual-battery scheme resulted in excessive total weight, nearing the thrust limit and reducing flight endurance.
 
 * **V3: Final Version - Vertical Stack Integrated Design**
-    <br>
-    <p align="center">
-        <img src="img/mechanical_v3.png" alt="Final Version Layered Structure" width="600"/>
-    </p>
-    
+![Version 3 Design](img/mechanical_v3.png)
     * Employed a five-layer vertical stack structure to centralize the center of gravity along the main axis, reducing roll/pitch moments of inertia.
     * Switched to a single-battery solution, significantly reducing the overall weight.
     * **Advantages:** High integration, simplified wiring, reduced electromagnetic interference, and improved control response speed.
